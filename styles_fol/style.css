@@ -1,0 +1,135 @@
+/* *{
+    box-sizing: border-box;
+} */
+@font-face {
+    font-family: "Kanit";
+    src: url(repo/Kanit-3/Kanit-Medium.ttf);
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.header_site_name{
+    display: flex;
+}   
+
+.header_menu{
+    display: flex;
+}
+.img{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+.flex_cont{
+    top: 0;
+    color: white;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;    
+    justify-content: space-between;
+    box-shadow: 10px 10px 30px rgb(181, 181, 181);
+    z-index: 1;
+    background-color: white;
+}
+.justify_site_name{
+    float: left;
+}
+
+.border{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-shadow: 10px 10px 30px rgb(181, 181, 181);
+}
+.def{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.nav_css ul{
+    display: flex;
+    padding-right: 4vh;
+}
+.nav_css li a{
+    text-decoration: none;
+    text-shadow: 10px 10px 30px rgb(181, 181, 181);
+    color: black;
+    padding: 1vh;
+    display: block;
+    padding-right: 2vh;
+}
+.nav_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_site_name ul a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1vh;
+}
+.header_site_name ul{
+    padding-left: 8vh;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+footer{
+    margin-top: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -10px -10px 30px rgb(181, 181, 181);
+    background-color: rgb(255, 255, 255);
+    z-index:1;
+}
+footer p{
+    color: black;
+}
+.footer_left{
+    padding-left: 10vh;
+}
+.footer_right{
+    padding-right: 10vh;
+}
+.blur{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: 10px;
+}
+.product_container{
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 10vh;
+    gap: 7vh;
+}
+.product_box{
+    border: 1px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgb(181, 181, 181);
+}
+.bg{
+    background-color: rgb(185, 212, 236);
+}
+
+/*-----------------------------------------------------------/*
