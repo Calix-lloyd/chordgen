@@ -1,0 +1,16 @@
+.nav_bar_css{
+    justify-content: space-between;
+    background-color: #a2a2a2;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.nav_list ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav_list{
+    justify-content:space-evenly;
+}
