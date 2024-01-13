@@ -1,25 +1,26 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom"
+import main_logo from "./chordgen_logo.png"
 export const NavBar = () => {
     return (
     <div class = "nav_bar_css">
         <div class = "logo_placement">
-            logo
+            <Link to= "/"><img src= {main_logo} alt="logo" height= "20px"/></Link>
         </div>
-        <div class = "nav_list">
-            <ul>
+        <div class = 'nav'>
+            <ul class = "nav_list">
                 <li>
-                    <Link to = "/">home</Link>
+                    <Link to = "/">HOME</Link>
                 </li>
                 <li>
-                    <Link to = "about">about</Link>
+                    <Link to = "about">ABOUT</Link>
                 </li>
                 <li>
-                    <Link to = "login">login</Link>
+                    <Link to = "login">LOGIN</Link>
                 </li>
                 <li>
-                    <Link to = "register">register</Link>
+                    <Link to = "register">REGISTER</Link>
                 </li>
             </ul>
         </div>

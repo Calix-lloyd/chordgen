@@ -1,16 +1,34 @@
 .nav_bar_css{
     justify-content: space-between;
-    background-color: #a2a2a2;
+    background-color: #ffffff;
     list-style: none;
     display: flex;
     flex-direction: row;
-    color: white;
-}
-.nav_list ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+    color: black;
+    min-height: 8vh;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 10px 10px 30px rgb(192, 139, 177);
 }
 .nav_list{
-    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+/* .nav_list{
+    display: flex;
+    justify-content: center;
+} */
+.logo_placement{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+
+}
+.nav_list{
+    gap: 3vh;
 }

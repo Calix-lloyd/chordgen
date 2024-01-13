@@ -7,6 +7,7 @@ import {About} from './components/pages/About';
 import {Login} from './components/pages/Login';
 import {Register} from './components/pages/Register';
 import { Home } from './components/pages/Home';
+import image from './components/react_logo.png'
 
 function App() {
   return (
@@ -18,7 +19,15 @@ function App() {
         <Route path='/register' element ={<Register></Register>}/>
         <Route path='/' element = {<Home></Home>}/>
       </Routes>
-      <div class = "footer_place">footer</div>
+      <div class = "footer_place">
+        <div>
+            TEAM ALVIN AND CALVIN
+        </div>
+        <div class = "footer_sub_div">
+            <p>POWERD BY REACT</p>
+            <img src={image} alt="Logo" height="30px"/>   
+        </div>
+      </div>
     </div>
   );
 }
