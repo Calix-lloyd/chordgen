@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        /* Light Mode Styles */
+        body.light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2196F3;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Toggle Styles */
+        #modeToggle {
+            display: none;
+        }
+        
+        .mode-toggle {
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        
+        #modeToggle:checked + .mode-toggle {
+            background-color: #2196F3; /* Toggle color when checked */
+        }
+        
+        /* Content Styles */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <input type="checkbox" id="modeToggle">
+        <label for="modeToggle" class="mode-toggle"></label>
+    </header>
+
+    <div class="content">
+        <h2>Welcome to My Website!</h2>
+        <p>This is a simple website with dark mode and light mode.</p>
+        <p>Toggle the switch in the header to switch between modes.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const modeToggle = document.getElementById('modeToggle');
+        
+            modeToggle.addEventListener('change', function () {
+                document.body.classList.toggle('dark-mode');
+                document.body.classList.toggle('light-mode');
+            });
+        });
+        
+    </script>
+</body>
+</html>
